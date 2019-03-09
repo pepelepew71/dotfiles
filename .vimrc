@@ -83,12 +83,17 @@ set splitright
 "# format
 set foldmethod=indent
 set foldlevel=99
-set autoindent
-set smartindent
 set tabstop=4
 set expandtab
 set softtabstop=4
 syntax on
+
+"## indent
+set autoindent
+set smartindent
+set cindent
+set shiftwidth=4
+set indentexpr=
 
 "# keymap
 let mapleader = " "
@@ -126,7 +131,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "## toggle autoindent
-nnoremap <F11> :setl noai nocin nosi inde=<cr>
+nnoremap <F10> :set autoindent! cindent! smartindent!<cr>
 
 "# setting for specified file
 "## python
@@ -137,7 +142,8 @@ au BufNewFile,BufRead *.py
 au BufNewFile,BufRead *.tex
     \ setl noai nocin nosi inde= |
     \ let g:tex_indent_brace = 0 |
-    \ nnoremap <F2> <Esc> :w<cr> :exec '!pdflatex' shellescape(@%, 1) <cr>
+    \ nnoremap <F2> <Esc> :w<cr> :exec '!pdflatex' shellescape(@%, 1) <cr> |
+    \ nnoremap <F3> <Esc> :w<cr> :exec '!bibtex' shellescape(expand('%:r').'.aux', 1) <cr>
 
 "## launch (ROS)
 au BufNewFile,BufRead *.launch set filetype=xml
