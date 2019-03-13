@@ -143,7 +143,8 @@ au BufNewFile,BufRead *.tex
     \ setl noai nocin nosi inde= |
     \ let g:tex_indent_brace = 0 |
     \ nnoremap <F2> <Esc> :w<cr> :exec '!pdflatex' shellescape(@%, 1) <cr> |
-    \ nnoremap <F3> <Esc> :w<cr> :exec '!bibtex' shellescape(expand('%:r').'.aux', 1) <cr>
+    \ nnoremap <F3> <Esc> :w<cr> :exec '!bibtex' shellescape(expand('%:r').'.aux', 1) <cr> |
+    \ nnoremap <F4> <Esc> :w<cr> :exec '!xelatex' shellescape(@%, 1) <cr>
 
 "## launch (ROS)
 au BufNewFile,BufRead *.launch set filetype=xml
