@@ -107,7 +107,7 @@ nnoremap <F8> :TagbarToggle<cr>
 
 "## toggle nerdtree
 "nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-n> <plug>NERDTreeTabsToggle<CR>
+map <C-n> <plug>NERDTreeTabsToggle<CR>
 
 "## tootle wrap
 nnoremap <leader>w :set wrap!<cr>
