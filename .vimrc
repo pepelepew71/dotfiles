@@ -12,6 +12,7 @@ Plugin 'Yggdroot/indentLine' " indentline
 Plugin 'vim-scripts/BufOnly.vim' " unload all buffers but the current one
 Plugin 'joshdick/onedark.vim' " theme
 Plugin 'scrooloose/nerdcommenter' " keybind comment
+Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
 
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
@@ -105,7 +106,8 @@ nnoremap <F12> a<C-R>=strftime("%Y-%m-%d %I:%M:%S")<CR><Esc>
 nnoremap <F8> :TagbarToggle<cr>
 
 "## toggle nerdtree
-nnoremap <C-n> :NERDTreeToggle<CR>
+"nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> <plug>NERDTreeTabsToggle<CR>
 
 "## tootle wrap
 nnoremap <leader>w :set wrap!<cr>
