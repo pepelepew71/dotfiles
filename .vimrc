@@ -58,7 +58,7 @@ set path+=** " :e file automplete in subdirectories
 set wildmenu " enable tab completion in command mode
 set nolist " dont show tailing space or tab
 set nowrap " no wrap
-let g:tex_conceal = "" " disable latex symbol conversion, can't do it in au
+let g:indentLine_setConceal = 0 " disable conceal in markdown
 
 "# gui
 colorscheme onedark
