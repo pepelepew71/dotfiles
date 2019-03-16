@@ -9,8 +9,6 @@ Plugin 'vim-scripts/indentpython.vim' " autoindent
 Plugin 'Yggdroot/indentLine' " indentline
 Plugin 'vim-scripts/BufOnly.vim' " unload all buffers but the current one
 Plugin 'joshdick/onedark.vim' " theme
-Plugin 'scrooloose/nerdcommenter' " keybind comment
-Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 Plugin 'scrooloose/nerdtree' " file browser
@@ -19,6 +17,8 @@ let NERDTreeShowLineNumbers = 0
 let g:NERDTreeWinPos = 'right'
 let NERDTreeBookmarksSort = 1
 let NERDTreeShowBookmarks = 1
+Plugin 'scrooloose/nerdcommenter' " keybind comment
+Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
 Plugin 'Valloric/YouCompleteMe' " auto completion
 set completeopt-=preview " no preview window
 let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -69,6 +69,10 @@ augroup numbertoggle
   autocmd BufEnter NERD_*                    set norelativenumber
   autocmd BufEnter __Tagbar__*               set norelativenumber
 augroup END
+
+"## toggle cursorline when switch pane
+au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * set cursorline
+au WinLeave,FocusLost,CmdwinLeave * set nocursorline
 
 "## default split location
 set splitbelow
