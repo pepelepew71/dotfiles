@@ -132,7 +132,10 @@ nnoremap <C-H> <C-W><C-H>
 "## toggle autoindent
 nnoremap <F10> :set autoindent! cindent! smartindent!<cr>
 
-"# setting for specified file
+"## disable Q keybind to ex mode
+nnoremap Q <Nop>
+
+"# setup for specified file
 "## python
 au BufNewFile,BufRead *.py
     \ nnoremap <F2> <Esc> :w<cr> :exec '!python' shellescape(@%, 1) <cr>
