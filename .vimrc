@@ -1,10 +1,8 @@
-"2019-03-08 10:50:49 
 "# plugin : vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim' " autoindent
@@ -13,26 +11,21 @@ Plugin 'vim-scripts/BufOnly.vim' " unload all buffers but the current one
 Plugin 'joshdick/onedark.vim' " theme
 Plugin 'scrooloose/nerdcommenter' " keybind comment
 Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
-
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
-
 Plugin 'scrooloose/nerdtree' " file browser
 let NERDTreeIgnore=['.idea', '.vscode', 'node_modules', '*.pyc']
 let NERDTreeShowLineNumbers = 0
 let g:NERDTreeWinPos = 'right'
 let NERDTreeBookmarksSort = 1
 let NERDTreeShowBookmarks = 1
-
 Plugin 'Valloric/YouCompleteMe' " auto completion
 set completeopt-=preview " no preview window
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
-
 Plugin 'majutsushi/tagbar' " python code structure map
 let g:tagbar_left = 1 " open at left
-
 call vundle#end()            " required
 filetype indent plugin on    " required
 
