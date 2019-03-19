@@ -119,7 +119,8 @@ nnoremap <leader>tc :tabclose<cr>
 "## buffer
 nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
-nnoremap <leader>bd :bd<cr>
+"nnoremap <leader>bd :bd<cr>
+nnoremap <leader>bd :bp<cr>:bd #<cr>
 nnoremap <leader>bc :BufOnly<cr>
 nnoremap <leader>ls :ls<cr>
 
