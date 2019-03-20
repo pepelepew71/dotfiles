@@ -197,6 +197,7 @@ for_window [class="^.*"] border pixel 3
 exec_always --no-startup-id feh --bg-fill ~/.config/wallpaper/mojave-night.jpg
 exec_always --no-startup-id compton -b --config ~/.config/compton.conf
 #exec --no-startup-id xrandr --output eDP-1 --mode 1600x900
+#exec --no-startup-id xrandr --output eDP-1 --brightness 0.7
 exec --no-startup-id redshift-gtk
 exec --no-startup-id ibus-daemon
 exec --no-startup-id xclip
