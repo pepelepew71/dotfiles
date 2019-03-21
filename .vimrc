@@ -26,6 +26,16 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 Plugin 'majutsushi/tagbar' " python code structure map
 let g:tagbar_left = 1 " open at left
+Plugin 'kien/ctrlp.vim' " ctrlp, fuzzy file search
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 call vundle#end()            " required
 filetype indent plugin on    " required
 
