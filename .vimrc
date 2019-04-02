@@ -3,39 +3,39 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim' " autoindent
-Plugin 'Yggdroot/indentLine' " indentline
-Plugin 'vim-scripts/BufOnly.vim' " unload all buffers but the current one
-Plugin 'joshdick/onedark.vim' " theme
-Plugin 'vim-airline/vim-airline'
-let g:airline#extensions#tabline#enabled=1
-Plugin 'scrooloose/nerdtree' " file browser
-let NERDTreeIgnore=['.idea', '.vscode', 'node_modules', '*.pyc']
-let NERDTreeShowLineNumbers=0
-let g:NERDTreeWinPos='right'
-let NERDTreeBookmarksSort=1
-let NERDTreeShowBookmarks=1
-Plugin 'scrooloose/nerdcommenter' " keybind comment
-Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
-Plugin 'Valloric/YouCompleteMe' " auto completion
-set completeopt-=preview " no preview window
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_key_list_stop_completion=['<C-y>', '<CR>']
-Plugin 'majutsushi/tagbar' " python code structure map
-let g:tagbar_left=1 " open at left
-Plugin 'kien/ctrlp.vim' " ctrlp, fuzzy file search
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
-let g:ctrlp_working_path_mode='ra'
-let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore={
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+    Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
+    Plugin 'tmhedberg/SimpylFold'
+    Plugin 'vim-scripts/indentpython.vim' " autoindent
+    Plugin 'Yggdroot/indentLine' " indentline
+    Plugin 'vim-scripts/BufOnly.vim' " unload all buffers but the current one
+    Plugin 'joshdick/onedark.vim' " theme
+    Plugin 'vim-airline/vim-airline'
+    let g:airline#extensions#tabline#enabled=1
+    Plugin 'scrooloose/nerdtree' " file browser
+    let NERDTreeIgnore=['.idea', '.vscode', 'node_modules', '*.pyc']
+    let NERDTreeShowLineNumbers=0
+    let g:NERDTreeWinPos = 'right'
+    let NERDTreeBookmarksSort=1
+    let NERDTreeShowBookmarks=1
+    Plugin 'scrooloose/nerdcommenter' " keybind comment
+    Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
+    Plugin 'Valloric/YouCompleteMe' " auto completion
+    set completeopt-=preview " no preview window
+    let g:ycm_autoclose_preview_window_after_insertion=1
+    let g:ycm_autoclose_preview_window_after_completion=1
+    let g:ycm_key_list_stop_completion=['<C-y>', '<CR>']
+    Plugin 'majutsushi/tagbar' " python code structure map
+    let g:tagbar_left=1 " open at left
+    Plugin 'kien/ctrlp.vim' " ctrlp, fuzzy file search
+    let g:ctrlp_map='<c-p>'
+    let g:ctrlp_cmd='CtrlP'
+    let g:ctrlp_working_path_mode='ra'
+    let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
+    let g:ctrlp_custom_ignore={
+      \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+      \ 'file': '\v\.(exe|so|dll)$',
+      \ 'link': 'some_bad_symbolic_links',
+      \ }
 call vundle#end()            " required
 filetype indent plugin on    " required
 
@@ -61,7 +61,6 @@ set path+=** " :e file automplete in subdirectories
 set wildmenu " enable tab completion in command mode
 set nolist " dont show tailing space or tab
 set nowrap " no wrap
-let g:indentLine_setConceal=0 " disable conceal in markdown
 
 "# gui
 colorscheme onedark
@@ -148,15 +147,21 @@ nnoremap Q <Nop>
 "# setup for specified file
 "## python
 au BufNewFile,BufRead *.py
-    \ nnoremap <F2> <Esc> :w<cr> :exec '!python' shellescape(@%, 1) <cr>
+    \ nnoremap <F2> <Esc> :w<cr> :exec '!python' shellescape(@%, 1) <cr>|
+    \ nnoremap <F3> <Esc> :w<cr> :exec '!python -m pdb' shellescape(@%, 1) <cr>
 
 "## latex
 au BufNewFile,BufRead *.tex
     \ setl noai nocin nosi inde= |
+    \ let g:tex_flavor='latex' |
     \ let g:tex_indent_brace=0 |
     \ nnoremap <F2> <Esc> :w<cr> :exec '!pdflatex' shellescape(@%, 1) <cr> |
     \ nnoremap <F3> <Esc> :w<cr> :exec '!bibtex' shellescape(expand('%:r').'.aux', 1) <cr> |
     \ nnoremap <F4> <Esc> :w<cr> :exec '!xelatex' shellescape(@%, 1) <cr>
 
+"## markdown
+au BufNewFile,BufRead *.md let g:indentLine_setConceal=0
+
 "## launch (ROS)
 au BufNewFile,BufRead *.launch set filetype=xml
+
