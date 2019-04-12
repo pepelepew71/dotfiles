@@ -2,6 +2,5 @@
 
 cp ~/.vimrc       ./
 cp ~/.tmux.conf   ./
-
-cp ~/.config/redshift.conf  ./.config/
+cp ~/.config/redshift.conf  ./
 
