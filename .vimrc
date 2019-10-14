@@ -19,11 +19,6 @@ call vundle#begin()
     let NERDTreeShowBookmarks=1
     Plugin 'scrooloose/nerdcommenter' " keybind comment
     Plugin 'jistr/vim-nerdtree-tabs' " open nerdtree in all tabs
-    Plugin 'Valloric/YouCompleteMe' " auto completion
-    set completeopt-=preview " no preview window
-    let g:ycm_autoclose_preview_window_after_insertion=1
-    let g:ycm_autoclose_preview_window_after_completion=1
-    let g:ycm_key_list_stop_completion=['<C-y>', '<CR>']
     Plugin 'majutsushi/tagbar' " python code structure map
     let g:tagbar_left=1 " open at left
 call vundle#end()            " required
@@ -95,9 +90,6 @@ set indentexpr=
 "# keymap
 let mapleader=" "
 
-"## insert current time
-nnoremap <F12> a<C-R>=strftime("%Y-%m-%d %I:%M:%S")<CR><Esc> 
-
 "## toggle tagbar
 nnoremap <F8> :TagbarToggle<cr>
 
@@ -140,18 +132,5 @@ au BufNewFile,BufRead *.py
     \ nnoremap <F2> <Esc> :w<cr> :exec '!python' shellescape(@%, 1) <cr>|
     \ nnoremap <F3> <Esc> :w<cr> :exec '!python -m pdb' shellescape(@%, 1) <cr>
 
-"## latex
-au BufNewFile,BufRead *.tex
-    \ setl noai nocin nosi inde= |
-    \ let g:tex_flavor='latex' |
-    \ let g:tex_indent_brace=0 |
-    \ nnoremap <F2> <Esc> :w<cr> :exec '!pdflatex' shellescape(@%, 1) <cr> |
-    \ nnoremap <F3> <Esc> :w<cr> :exec '!bibtex' shellescape(expand('%:r').'.aux', 1) <cr> |
-    \ nnoremap <F4> <Esc> :w<cr> :exec '!xelatex' shellescape(@%, 1) <cr>
-
-"## markdown
-au BufNewFile,BufRead *.md let g:indentLine_setConceal=0
-
 "## launch (ROS)
 au BufNewFile,BufRead *.launch set filetype=xml
-
