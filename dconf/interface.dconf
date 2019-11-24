@@ -1,8 +1,0 @@
-[/]
-text-scaling-factor=1.0
-cursor-size=24
-gtk-im-module='ibus'
-scaling-factor=uint32 1
-toolkit-accessibility=false
-enable-animations=true
-clock-show-date=false
