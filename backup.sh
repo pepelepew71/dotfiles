@@ -7,5 +7,4 @@ cp ~/.config/xfce4/helpers.rc ./.config/xfce4/
 
 cp ~/.vimrc ./
 cp ~/.tmux.conf ./
-cp ~/.xinitrc ./
 cp ~/.Xresources ./

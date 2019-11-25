@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-cp .vimrc ~/
 cp .tmux.conf ~/
-cp ./config/* ~/.config/
+cp .vimrc ~/
+cp .Xresources ~/
+cp ./.config/* ~/.config/ -r
