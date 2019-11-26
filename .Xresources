@@ -5,7 +5,7 @@ XTerm*selectToClipboard:true
 XTerm.vt100.locale: true
 
 ! font
-xterm*faceName: Monospace:size=12:antialias=true
+xterm*faceName: Monospace:size=10:antialias=true
 xterm*font: 7x12
 
 ! tomorrow.dark

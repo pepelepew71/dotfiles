@@ -1,5 +1,5 @@
 favorites=exo-web-browser.desktop,exo-mail-reader.desktop,exo-file-manager.desktop,exo-terminal-emulator.desktop,xfhelp4.desktop
-recent=xfce-keyboard-settings.desktop,xfce-backdrop-settings.desktop,ibus-setup.desktop,light-locker-settings.desktop,xfce-display-settings.desktop,xfce-wm-settings.desktop,panel-preferences.desktop,xfce-session-settings.desktop,xfce-ui-settings.desktop
+recent=software-properties-gtk.desktop,htop.desktop,xfce4-settings-editor.desktop,xfce-ui-settings.desktop,xfce-session-settings.desktop,redshift-gtk.desktop,ibus-setup.desktop,exo-preferred-applications.desktop,xfce-keyboard-settings.desktop,xfce-backdrop-settings.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=false
