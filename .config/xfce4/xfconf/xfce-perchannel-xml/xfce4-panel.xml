@@ -13,9 +13,9 @@
         <value type="int" value="9"/>
         <value type="int" value="10"/>
         <value type="int" value="4"/>
+        <value type="int" value="7"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
-        <value type="int" value="7"/>
         <value type="int" value="8"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
@@ -30,7 +30,6 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="whiskermenu"/>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="true"/>
     </property>
@@ -42,35 +41,14 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="thunar"/>
-        <value type="string" value="ibus panel"/>
         <value type="string" value="redshift-gtk"/>
-      </property>
-    </property>
-    <property name="plugin-5" type="string" value="power-manager-plugin"/>
-    <property name="plugin-6" type="string" value="indicator">
-      <property name="blacklist" type="array">
-        <value type="string" value="com.canonical.indicator.power"/>
-        <value type="string" value="libapplication.so"/>
-        <value type="string" value="libappmenu.so"/>
-      </property>
-      <property name="known-indicators" type="array">
-        <value type="string" value="libapplication.so"/>
-        <value type="string" value="com.canonical.indicator.datetime"/>
-        <value type="string" value="com.canonical.indicator.power"/>
-        <value type="string" value="com.canonical.indicator.sound"/>
-        <value type="string" value="com.canonical.indicator.bluetooth"/>
-        <value type="string" value="com.canonical.indicator.messages"/>
-        <value type="string" value="com.canonical.indicator.keyboard"/>
-        <value type="string" value="com.canonical.indicator.session"/>
-      </property>
-      <property name="single-row" type="bool" value="false"/>
-      <property name="align-left" type="bool" value="false"/>
-      <property name="mode-whitelist" type="bool" value="false"/>
-      <property name="whitelist" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="shutter"/>
+        <value type="string" value="xfce4-power-manager"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="separator">
@@ -80,10 +58,30 @@
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-format" type="string" value="%d %b, %H:%M"/>
     </property>
-    <property name="plugin-9" type="string" value="pager"/>
+    <property name="plugin-9" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
     <property name="plugin-10" type="string" value="separator">
       <property name="expand" type="bool" value="false"/>
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
+    <property name="plugin-5" type="string" value="indicator">
+      <property name="known-indicators" type="array">
+        <value type="string" value="libapplication.so"/>
+        <value type="string" value="com.canonical.indicator.power"/>
+        <value type="string" value="com.canonical.indicator.keyboard"/>
+        <value type="string" value="com.canonical.indicator.sound"/>
+        <value type="string" value="com.canonical.indicator.session"/>
+        <value type="string" value="com.canonical.indicator.datetime"/>
+        <value type="string" value="com.canonical.indicator.bluetooth"/>
+      </property>
+    </property>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-title" type="string" value=""/>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>
