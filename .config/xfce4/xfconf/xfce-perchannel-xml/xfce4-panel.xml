@@ -7,10 +7,10 @@
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
+        <value type="int" value="9"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
-        <value type="int" value="9"/>
+        <value type="int" value="10"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -41,9 +41,12 @@
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
         <value type="string" value="network"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="blueman-applet"/>
         <value type="string" value="redshift-gtk"/>
         <value type="string" value="ibus panel"/>
+        <value type="string" value="ibus-ui-gtk3"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="power-manager-plugin"/>
@@ -62,13 +65,16 @@
       <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-8" type="string" value="clock">
-      <property name="digital-format" type="string" value="%m-%d %R"/>
+      <property name="digital-format" type="string" value="%F %R"/>
+      <property name="tooltip-format" type="string" value="%x"/>
       <property name="timezone" type="string" value="Asia/Taipei"/>
     </property>
-    <property name="plugin-1" type="string" value="applicationsmenu">
+    <property name="plugin-9" type="string" value="applicationsmenu">
       <property name="button-title" type="string" value=""/>
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="show-generic-names" type="bool" value="false"/>
     </property>
-    <property name="plugin-9" type="string" value="pager"/>
+    <property name="plugin-10" type="string" value="pager"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
