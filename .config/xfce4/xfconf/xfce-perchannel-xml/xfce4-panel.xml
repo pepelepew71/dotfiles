@@ -40,13 +40,14 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
-        <value type="string" value="network"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="blueman-applet"/>
         <value type="string" value="redshift-gtk"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="task manager"/>
         <value type="string" value="ibus panel"/>
+        <value type="string" value="network"/>
         <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="xfce4-power-manager"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="power-manager-plugin"/>
@@ -73,6 +74,7 @@
       <property name="button-title" type="string" value=""/>
       <property name="show-menu-icons" type="bool" value="true"/>
       <property name="show-generic-names" type="bool" value="false"/>
+      <property name="show-button-title" type="bool" value="false"/>
     </property>
     <property name="plugin-10" type="string" value="pager"/>
   </property>
