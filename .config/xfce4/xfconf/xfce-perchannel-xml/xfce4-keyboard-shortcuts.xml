@@ -63,6 +63,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;s" type="string" value="xfce4-settings-manager"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="chromium-browser --incognito"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
