@@ -56,7 +56,7 @@
       <value type="string" value="5"/>
     </property>
     <property name="wrap_resistance" type="empty"/>
-    <property name="wrap_windows" type="empty"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="wrap_workspaces" type="empty"/>
     <property name="borderless_maximize" type="bool" value="true"/>
     <property name="cycle_hidden" type="bool" value="true"/>
