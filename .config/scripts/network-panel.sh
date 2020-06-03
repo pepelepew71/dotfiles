@@ -10,7 +10,7 @@ readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly ICON="${DIR}/icons/network/web.png"
 
 # Displays all active network interfaces with their IPv4 addresses (local)
-readonly TOOLTIP=$(/home/ych/bin/xfce4-genmon-scripts/ship --ipv4)
+# readonly TOOLTIP="${DIR}/ship --ipv4"
 
 # You can pass the desired network interface on the command
 # On the generic monitor properties

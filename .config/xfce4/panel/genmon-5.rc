@@ -1,4 +1,4 @@
-Command=/home/ych/bin/xfce4-genmon-scripts/memory-panel.sh
+Command=/home/ych/.config/scripts/memory-panel.sh
 UseLabel=0
 Text=(genmon)
 UpdatePeriod=2000
