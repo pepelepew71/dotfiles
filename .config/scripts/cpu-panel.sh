@@ -49,9 +49,9 @@ cpu="${cpu}%"
 # Panel
 if [[ $(file -b "${ICON}") =~ PNG|SVG ]]; then
   INFO="<img>${ICON}</img>"
-  if hash xfce4-taskmanager &> /dev/null; then
-    INFO+="<click>xfce4-taskmanager</click>"
-  fi
+  # if hash xfce4-taskmanager &> /dev/null; then
+  #   INFO+="<click>xfce4-taskmanager</click>"
+  # fi
   INFO+="<txt>"
 else
   INFO="<txt>"
