@@ -1,0 +1,6 @@
+Command=/home/ych/bin/xfce4-genmon-scripts/cpu-panel.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=2000
+Font=Sans 10
+

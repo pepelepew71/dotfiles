@@ -1,0 +1,6 @@
+Command=/home/ych/bin/xfce4-genmon-scripts/network-panel.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=5000
+Font=(default)
+
