@@ -57,7 +57,7 @@ else
   INFO="<txt>"
 fi
 # INFO+="${STDOUT}"
-INFO+="${cpu}"
+INFO+="${cpu} "
 INFO+="</txt>"
 
 # Panel Print

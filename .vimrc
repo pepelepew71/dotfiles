@@ -30,6 +30,7 @@ set langmenu=zh_TW
 let $LANG='en_US.UTF-8'
 
 "# general
+set ff=unix
 set nobackup
 set noswapfile " no swap file
 set nobomb " remove BOM

@@ -20,8 +20,8 @@ fi
 # Calculate datetime values
 # readonly TIME=$(LC_ALL=en_US.UTF-8 date +%T)
 readonly TIME=$(LC_ALL=en_US.UTF-8 date +\ %F\ %R)
-# readonly DATE=$(LC_ALL=en_US.UTF-8 date +%A\ %d\ %B\ %Y)
-# readonly DATE=$(LC_ALL=en_US.UTF-8 date %d\ %B\ %Y)
+readonly DATE=$(LC_ALL=en_US.UTF-8 date +%A\ %d\ %B\ %Y)
+#readonly DATE=$(LC_ALL=en_US.UTF-8 date %d\ %B\ %Y)
 
 # Panel
 if [[ $(file -b "${ICON}") =~ PNG|SVG ]]; then
@@ -34,9 +34,9 @@ INFO+="${TIME}"
 INFO+="</txt>"
 
 # Tooltip
-# MORE_INFO="<tool>"
-# MORE_INFO+="${DATE}"
-# MORE_INFO+="</tool>"
+MORE_INFO="<tool>"
+MORE_INFO+="${DATE}"
+MORE_INFO+="</tool>"
 
 # Panel Print
 echo -e "${INFO}"

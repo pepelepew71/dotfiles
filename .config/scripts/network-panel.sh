@@ -77,7 +77,8 @@ function to_human_readable_output () {
   done
 
   case "${P}" in
-    0) BANDWIDTH="${BANDWIDTH} B/s" ;;
+    # 0) BANDWIDTH="${BANDWIDTH} B/s" ;;
+    0) BANDWIDTH="0 KB/s" ;;
     1) BANDWIDTH="${BANDWIDTH} KB/s" ;;
     2) BANDWIDTH="${BANDWIDTH} MB/s" ;;
     3) BANDWIDTH="${BANDWIDTH} GB/s" ;;

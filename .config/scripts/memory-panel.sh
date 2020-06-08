@@ -35,7 +35,7 @@ fi
 INFO+="${USED}"
 # INFO+="／"
 INFO+=" / "
-INFO+="${TOTAL} GB"
+INFO+="${TOTAL} GB "
 INFO+="</txt>"
 
 # Tooltip

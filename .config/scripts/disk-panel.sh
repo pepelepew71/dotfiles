@@ -36,7 +36,7 @@ INFO+="$(awk '{$1 = $1 / 1048576; printf "%.2f", $1}' <<< $(df / | awk '/\/dev/{
 # INFO+="／"
 INFO+=" / "
 INFO+="$(awk '{$1 = $1 / 1048576; printf "%.2f", $1}' <<< $(df / | awk '/\/dev/{print $2}'))"
-INFO+=" GB"
+INFO+=" GB "
 
 # Close span tag if warning colors are applied
 [[ "${OVERHEAT}" -eq 1 ]] && \
