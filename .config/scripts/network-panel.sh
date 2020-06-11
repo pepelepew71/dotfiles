@@ -72,13 +72,14 @@ function to_human_readable_output () {
   local P=0
 
   while [[ $(echo "${BANDWIDTH}" '>' 1024 | bc -l) -eq 1 ]]; do
-    BANDWIDTH=$(awk '{$1 = $1 / 1024; printf "%.2f", $1}' <<< "${BANDWIDTH}")
+    # BANDWIDTH=$(awk '{$1 = $1 / 1024; printf "%.1f", $1}' <<< "${BANDWIDTH}")
+    BANDWIDTH=$(awk '{$1 = $1 / 1024; printf "%03d", $1}' <<< "${BANDWIDTH}")
     P=$(( P + 1 ))
   done
 
   case "${P}" in
     # 0) BANDWIDTH="${BANDWIDTH} B/s" ;;
-    0) BANDWIDTH="0 KB/s" ;;
+    0) BANDWIDTH="000 KB/s" ;;
     1) BANDWIDTH="${BANDWIDTH} KB/s" ;;
     2) BANDWIDTH="${BANDWIDTH} MB/s" ;;
     3) BANDWIDTH="${BANDWIDTH} GB/s" ;;
