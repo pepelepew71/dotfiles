@@ -1,0 +1,12 @@
+/home/ych/.config/scripts/network-panel.sh
+5000
+
+/home/ych/.config/scripts/cpu-panel.sh
+2000
+
+/home/ych/.config/scripts/memory-panel.sh
+2000
+
+/home/ych/.config/scripts/disk-panel.sh
+30000
+

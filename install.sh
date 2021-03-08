@@ -4,3 +4,4 @@ cp .tmux.conf  ~/
 cp .vimrc      ~/
 
 cp ./.config/* ~/.config/ -r
+
