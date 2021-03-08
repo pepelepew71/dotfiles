@@ -34,7 +34,7 @@
     <property name="show_dock_shadow" type="empty"/>
     <property name="show_frame_shadow" type="empty"/>
     <property name="show_popup_shadow" type="empty"/>
-    <property name="snap_to_border" type="empty"/>
+    <property name="snap_to_border" type="bool" value="true"/>
     <property name="snap_to_windows" type="empty"/>
     <property name="snap_width" type="empty"/>
     <property name="theme" type="string" value="Numix"/>
@@ -77,7 +77,7 @@
     <property name="resize_opacity" type="int" value="100"/>
     <property name="snap_resist" type="bool" value="true"/>
     <property name="sync_to_vblank" type="bool" value="false"/>
-    <property name="tile_on_move" type="bool" value="true"/>
+    <property name="tile_on_move" type="bool" value="false"/>
     <property name="titleless_maximize" type="bool" value="true"/>
     <property name="toggle_workspaces" type="bool" value="false"/>
     <property name="unredirect_overlays" type="bool" value="true"/>

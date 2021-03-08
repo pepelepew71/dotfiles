@@ -64,6 +64,7 @@
       <property name="&lt;Super&gt;e" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;s" type="string" value="xfce4-settings-manager"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="chromium-browser --incognito"/>
+      <property name="&lt;Primary&gt;Print" type="string" value="shutter -s"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -162,6 +163,8 @@
       <property name="&lt;Super&gt;Left" type="string" value="tile_left_key"/>
       <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
       <property name="&lt;Super&gt;End" type="string" value="resize_window_key"/>
+      <property name="&lt;Super&gt;KP_8" type="string" value="tile_up_key"/>
+      <property name="&lt;Super&gt;KP_2" type="string" value="tile_down_key"/>
     </property>
   </property>
   <property name="providers" type="array">

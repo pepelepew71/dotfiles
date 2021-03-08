@@ -1,22 +1,22 @@
 {
-    "segments": [
-        "virtual_env",
-        "username",
-        "hostname",
-        "ssh",
-        "cwd",
-        "git",
-        "git_stash",
-        "hg",
-        "jobs",
-        "root",
-        "exit_code"
-    ],
-    "mode": "compatible",
-    "cwd": {
-        "mode": "plain",
-        "max_depth": 2,
-        "colorize" : true
-    },
-    "theme" : "solarized_dark"
+  "segments": [
+    "virtual_env",
+    "username",
+    "hostname",
+    "ssh",
+    "cwd",
+    "git",
+    "git_stash",
+    "hg",
+    "jobs",
+    "root",
+    "exit_code"
+  ],
+  "mode": "compatible",
+  "cwd": {
+      "mode": "plain",
+      "max_depth": 2,
+      "colorize" : true
+  },
+  "theme" : "solarized_dark"
 }
